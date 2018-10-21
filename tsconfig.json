@@ -7,13 +7,13 @@
  "module": "commonjs",
  "outDir": "./",
  "sourceMap": false,
- "strict": true
+ "strict": true,
+  "resolveJsonModule": true
 },
 "include": [
-  "**.ts"
+  "src/**.ts"
  ],
 "exclude": [
-  "node_modules",
-  "firefunctions"
+  "node_modules"
  ]
 }
