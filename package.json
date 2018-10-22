@@ -1,13 +1,13 @@
 {
   "name": "dice-mage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dice-Ware passphrase generator",
   "main": "src/dice.js",
   "preferGlobal": true,
   "bin": "./build/dice.js",
   "scripts": {
-    "test":  "mocha -r ts-node/register src/**/*.spec.ts",
-    "start": "nodemon --exec ts-node -- contact.ts",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "start": "ts-node -- src/dice.ts generate",
     "ts-node": "ts-node contact.ts",
     "build": "rm -rf ./build && tsc --outDir ./build/"
   },
