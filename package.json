@@ -1,7 +1,7 @@
 {
   "name": "dice-mage",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dice-Ware passphrase generator",
   "main": "src/dice.js",
   "preferGlobal": true,
   "bin": "./build/dice.js",
@@ -11,7 +11,11 @@
     "ts-node": "ts-node contact.ts",
     "build": "rm -rf ./build && tsc --outDir ./build/"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/vamanos-x/dice-mage.git"
+  },
+  "author": "Robert Arnold",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.1",

@@ -16,12 +16,13 @@ commander
     .alias('g')
     .option('-t, --total-words <totalWords>', 'Number of words to generate', 5)
     .action((options) =>  {
+        let diceGen = new diceGenerator();
         console.log(chalk.blueBright('========*** Passphrase Generation ***========'));
         console.log(`Generating total words: ${options.totalWords}\n`);
         const spinner = ora();
         spinner.start();
         let t0 = perf.performance.now();
-        let response = diceGenerator.generatePhrase(options.totalWords);
+        let response = diceGen.generatePhrase(options.totalWords);
         let t1 = perf.performance.now();
         console.log(response);
         console.log(`Generated in: ${t1 - t0} milliseconds`);
